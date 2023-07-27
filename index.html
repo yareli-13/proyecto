@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>PASTELERIA</title>
+</head>
+<body onload="calcular()"class="text-center">
+
+<h1 class="bg-warning m-5">PASTELERIA</h1>
+<div class="card  m-5">
+    <h1 class="bg-dark text-white">tipos:</h1>
+    <select class="form-control"name="tipos"onchange="calcular()" id="tipos">
+
+        <option value="1" >3 leches</option>
+        <option value="2" > chocolate</option>
+        <option value="3" >bizcocho</option>
+        <option value="4">cheesecake</option>
+        <option value="5">trufa y moka</option>
+    </select>
+    <div class="m-2 ">
+
+    <h1 class="bg-success">Peso</h1>
+    <input class="form-control "type="range" id="peso" oninput="calcular()" value="0" min="1" max="20">
+    <label class="h2 "id="vpes">1</label>
+    <div class="m-2 ">
+    <h1 class="bg-success">Decoracion</h1>
+    <div class="m-2 ">
+    <input type="checkbox" name="D" id="c" class="form-check-input" onchange="calcular()" >caramelo
+    <input type="checkbox" name="D" id="f" class="form-check-input" onchange="calcular()" >frutas
+    <input type="checkbox" name="D" id="m" class="form-check-input" onchange="calcular()" >merengue
+    <input type="checkbox" name="D" id="fo" class="form-check-input" onchange="calcular()" >fondant
+</div>
+<div class="bg-dark text-white h2 "id="COSTO">COSTO: $ 0.00 MXN</div>
+</div>
+<div class="bg-dark text-white h2 "id="PERSONAS">PERSONAS: </div>
+<script src="bootstrap.min.css"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="sweetalert2.all.min (2).js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
